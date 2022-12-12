@@ -16,6 +16,7 @@
   --backdrop-color: rgba(0, 0, 0, 0.2);
   --modal-btn-color: rgba(0, 0, 0, 0.1);
   --action-thumb-color: rgba(47, 48, 58, 0.8);
+  --portfolio-card-bg-color: rgba(33, 150, 243, 0.9);
 
   --card-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -358,15 +359,15 @@ img {
   letter-spacing: 0.03em;
 }
 
-.pic-list.container .action-item + .action-item {
+.pic-list.container .activity-item + .activity-item {
   margin-left: 30px;
 }
 
-.action-item {
+.activity-item {
   position: relative;
 }
 
-.action-thumb {
+.activity-thumb {
   position: absolute;
   display: flex;
   bottom: 0;
@@ -377,7 +378,7 @@ img {
   background-color: var(--action-thumb-color);
 }
 
-.action-name {
+.activity-name {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -700,4 +701,45 @@ img {
 
 .image .image-link {
   text-decoration: none;
+}
+
+.image-thumb {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-thumb::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--portfolio-card-bg-color);
+  opacity: 0;
+}
+
+.image-description {
+  position: absolute;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  max-width: 322px;
+
+  color: var(--white-color);
+  opacity: 0;
+}
+
+.image-link:hover .image-description,
+.image-link:focus .image-description {
+  opacity: 1;
+  transition: opacity 250ms var(--timing-function);
+}
+
+.image-link:hover .image-thumb::before,
+.image-link:focus .image-thumb::before {
+  opacity: 1;
+  transition: opacity 250ms var(--timing-function);
 }
