@@ -118,12 +118,13 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+
+  transition: color 250ms var(--timing-function);
 }
 
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--accent-color);
-  transition: color 250ms var(--timing-function);
 }
 
 .site-nav .link.current {
@@ -152,12 +153,13 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+
+  transition: color 250ms var(--timing-function);
 }
 
 .cont-nav .link:hover,
 .cont-nav .link:focus {
   color: var(--accent-color);
-  transition: color 250ms var(--timing-function);
 }
 
 .icon-envelope {
@@ -225,12 +227,13 @@ img {
   line-height: 1.88;
   letter-spacing: 0.06em;
   font-family: inherit;
+
+  transition: background-color 250ms var(--timing-function);
 }
 
 .button-primary:hover,
 .button-primary:focus {
   background-color: var(--btn-active-bg-color);
-  transition: background-color 250ms var(--timing-function);
 }
 
 /* Modal */
@@ -443,8 +446,11 @@ img {
   border-radius: 50%;
   align-items: center;
   justify-content: center;
+
   color: var(--icon-current-color);
   background-color: var(--white-color);
+
+  transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function);
 }
 
 .team-icon {
@@ -461,7 +467,6 @@ img {
 .team-link:focus {
   background-color: var(--accent-color);
   color: var(--white-color);
-  transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function);
 }
 
 /* Clients */
@@ -479,6 +484,8 @@ img {
   border: 1px solid var(--icon-current-color);
   border-radius: 4px;
   color: var(--icon-current-color);
+
+  transition: color 250ms var(--timing-function), border-color 250ms var(--timing-function);
 }
 
 .clients-icon {
@@ -495,7 +502,6 @@ img {
 .clients-link:focus {
   border-color: var(--accent-color);
   color: var(--accent-color);
-  transition: color 250ms var(--timing-function), border-color 250ms var(--timing-function);
 }
 
 /* Стилі для футеру */
@@ -548,12 +554,13 @@ img {
   letter-spacing: 0.03em;
   text-decoration: none;
   font-style: normal;
+
+  transition: color 250ms var(--timing-function);
 }
 
 .link-secondary:hover,
 .link-secondary:focus {
   color: var(--accent-color);
-  transition: color 250ms var(--timing-function);
 }
 
 .footer-join {
@@ -596,12 +603,13 @@ img {
   justify-content: center;
   color: var(--white-color);
   background-color: var(--icon-bg-color);
+
+  transition: background-color 250ms var(--timing-function);
 }
 
 .footer-networks:hover,
 .footer-networks:focus {
   background-color: var(--accent-color);
-  transition: background-color 250ms var(--timing-function);
 }
 
 .join-list .footer-item + .footer-item {
@@ -634,6 +642,9 @@ img {
   line-height: 1.63;
   letter-spacing: 0.03em;
   font-family: inherit;
+
+  transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function),
+    box-shadow 250ms var(--timing-function);
 }
 
 .button-secondary:hover,
@@ -641,8 +652,6 @@ img {
   color: var(--white-color);
   background-color: var(--accent-color);
   box-shadow: var(--secondary-btn-shadow);
-  transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function),
-    box-shadow 250ms var(--timing-function);
 }
 
 /* Зображення */
@@ -666,12 +675,12 @@ img {
 
 .image-link {
   display: block;
+  transition: box-shadow 250ms var(--timing-function);
 }
 
 .image-link:hover,
 .image-link:focus {
   box-shadow: var(--prtf-card-shadow);
-  transition: box-shadow 250ms var(--timing-function);
 }
 
 .card-content {
@@ -717,6 +726,8 @@ img {
   height: 100%;
   background-color: var(--portfolio-card-bg-color);
   opacity: 0;
+
+  transition: opacity 250ms var(--timing-function);
 }
 
 .image-description {
@@ -730,16 +741,16 @@ img {
 
   color: var(--white-color);
   opacity: 0;
+
+  transition: opacity 250ms var(--timing-function);
 }
 
 .image-link:hover .image-description,
 .image-link:focus .image-description {
   opacity: 1;
-  transition: opacity 250ms var(--timing-function);
 }
 
 .image-link:hover .image-thumb::before,
 .image-link:focus .image-thumb::before {
   opacity: 1;
-  transition: opacity 250ms var(--timing-function);
 }
