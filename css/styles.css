@@ -131,6 +131,22 @@ img {
   color: var(--accent-color);
 }
 
+.link.current {
+  position: relative;
+}
+
+.link.current::after {
+  content: '';
+  position: absolute;
+
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  background-color: var(--accent-color);
+  border-radius: 2px;
+}
+
 /* Cont nav */
 .cont-nav {
   display: flex;
